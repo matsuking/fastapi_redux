@@ -19,8 +19,6 @@ export const App = () => {
 
       // get, put, deleteすべてのメソッドに、commonで設定する
       axios.defaults.headers.common['X-CSRF-Token'] = res.data.csrf_token
-      console.log(axios)
-      console.log(res.data.csrf_token)
     }
 
     getCsrfToken()

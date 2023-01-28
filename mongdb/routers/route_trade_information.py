@@ -34,7 +34,7 @@ async def create_trade_information(request: Request , response: Response , data:
 
 @router.get("/api/trade_information" , response_model=List[TradeInformation])
 async def get_trade_information(request: Request) :
-    # auth.verify_jwt(request)
+    auth.verify_jwt(request)
     res = await db_get_trade_information()
 
     return res
