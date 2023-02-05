@@ -17,7 +17,7 @@ export const useMutateAuth = () => {
       }),
     {
       onSuccess: () => {
-        navigate('/tradeinfo')
+        navigate('/trade_information')
       },
       onError: (err: any) => {
         alert(`${err.response.data.detail}\n${err.message}`)

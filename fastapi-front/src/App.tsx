@@ -28,7 +28,7 @@ export const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Auth />} />
-        <Route path="/tradeinfo" element={<TradeInfo />} />
+        <Route path="/trade_information" element={<TradeInfo />} />
       </Routes>
     </BrowserRouter>
   )

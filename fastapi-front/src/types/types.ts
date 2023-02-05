@@ -1,4 +1,5 @@
 export interface TradeInfo {
+  id: string
   trade: string
   book: string
   product: string

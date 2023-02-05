@@ -45,7 +45,7 @@ async def db_create_trade_information(data: dict) -> Union[dict , bool] :
     new_trade_information = await collection_trade_information.find_one({"_id" : trade_information.inserted_id})
 
     if new_trade_information :
-        return trade_information(new_trade_information)
+        return trade_information_serializer(new_trade_information)
     return False
 
 

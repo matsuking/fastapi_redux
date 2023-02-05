@@ -42,7 +42,7 @@ export const useProcessAuth = () => {
     await logoutMutation.mutateAsync()
 
     // casheの内容を削除
-    queryClient.removeQueries('tradeinfo')
+    queryClient.removeQueries('trade_information')
     queryClient.removeQueries('user')
     navigate('/')
   }

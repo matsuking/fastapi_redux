@@ -10,6 +10,7 @@ export interface AppState {
 
 const initialState: AppState = {
   editedTradeInfo: {
+    id: '',
     trade: '',
     book: '',
     product: '',
